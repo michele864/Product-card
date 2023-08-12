@@ -1,0 +1,177 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boite {
+    background-color: white;
+    width: 690px;
+    height: 550px;
+    display: flex;
+    border-radius: 25px;
+}
+
+#img {
+    height: 550px;
+    width: 50%;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#img2 {
+    display: none;
+}
+
+.BB {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
+}
+
+.dg {
+    font-family: [Montserrat]('https://fonts.google.com/specimen/Montserrat');
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+}
+
+.ds {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.cv {
+    color: hsl(228, 12%, 48%);
+    font-size: 17px;
+}
+
+.iu {
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+
+}
+
+
+span {
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    height: 150px;
+    border-radius: 20px;
+    color: hsl(30, 38%, 92%);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(158, 81%, 8%);
+}
+
+#pan {
+    margin-right: 10px;
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 740px) {
+    .boite {
+        width: 520px;
+        height: 570px;
+
+    }
+
+    #img {
+        width: 50%;
+        height: 570px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .boite {
+        width: 405px;
+
+    }
+
+    .ds {
+        font-size: 25px;
+    }
+
+    #img {
+        width: 50%;
+    }
+
+    .BB {
+        padding: 12px 12px 12px 12px;
+    }
+
+    button {
+        height: 90px;
+
+    }
+
+    .iu {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .boite {
+        width: 320px;
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    .BB{
+        padding: 15px 15px 15px 15px;
+    }
+
+    #img {
+        display: none;
+    }
+
+    #img2 {
+        display: block;
+        width: 320px;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .ds {
+        font-size: 30px;
+    }
+
+    .iu {
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+    }
+
+    .cv{
+        font-size: 19px;
+    }
+
+    button {
+        height: 45px;
+    }
+}
